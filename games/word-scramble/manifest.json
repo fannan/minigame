@@ -1,0 +1,12 @@
+{
+  "id": "word-scramble",
+  "title": "Word Scramble",
+  "description": "Unscramble the letters to form words before time runs out!",
+  "version": "1.0.0",
+  "minPlayers": 1,
+  "maxPlayers": 1,
+  "duration": 60,
+  "xpReward": 50,
+  "engine": "vanilla",
+  "engineVersion": "1.0.0"
+}

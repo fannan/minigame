@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build artifacts
+.build/
+dist/
+*.o
+*.d
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+*.xcworkspace/
+xcuserdata/
+
+# Generated Xcode project (regenerate with xcodegen)
+*.xcodeproj/
+
+# Wrangler
+.wrangler/
+.dev.vars
+
+# Environment
+.env
+.env.local

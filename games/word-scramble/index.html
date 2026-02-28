@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+  <title>Word Scramble</title>
+  <style>
+    /* Inline critical: prevent FOUC and disable touch delays */
+    html { touch-action: manipulation; }
+    body { background: #0D0D0F; overflow: hidden; }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body translate="no">
+  <div id="game-container">
+    <div id="timer-bar"><div id="timer-fill"></div></div>
+
+    <div id="hud">
+      <div id="score-display">
+        <span class="hud-label">SCORE</span>
+        <span id="score-value">0</span>
+      </div>
+      <div id="streak-display">
+        <span class="hud-label">STREAK</span>
+        <span id="streak-value">0</span>
+      </div>
+      <div id="time-display">
+        <span class="hud-label">TIME</span>
+        <span id="time-value">60</span>
+      </div>
+    </div>
+
+    <div id="prompt-area">
+      <p id="prompt-text">Unscramble the word</p>
+    </div>
+
+    <div id="scramble-area">
+      <div id="scrambled-letters"></div>
+    </div>
+
+    <div id="answer-area">
+      <div id="answer-slots"></div>
+    </div>
+
+    <div id="controls">
+      <button id="clear-btn">Clear</button>
+      <button id="submit-btn">Submit</button>
+    </div>
+
+    <div id="feedback"></div>
+
+    <div id="game-over-screen" class="hidden">
+      <div id="game-over-content">
+        <h1>Time's Up!</h1>
+        <div id="final-stats">
+          <div class="final-stat">
+            <span class="final-stat-value" id="final-score">0</span>
+            <span class="final-stat-label">Score</span>
+          </div>
+          <div class="final-stat">
+            <span class="final-stat-value" id="final-words">0</span>
+            <span class="final-stat-label">Words</span>
+          </div>
+          <div class="final-stat">
+            <span class="final-stat-value" id="final-streak">0</span>
+            <span class="final-stat-label">Best Streak</span>
+          </div>
+        </div>
+        <button id="play-again-btn">Play Again</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../shared/bridge.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "id": "tap-race",
+  "title": "Tap Race",
+  "description": "Tap as fast as you can! Race to get the highest score in 10 seconds.",
+  "version": "1.0.0",
+  "minPlayers": 1,
+  "maxPlayers": 4,
+  "duration": 10,
+  "xpReward": 50,
+  "engine": "phaser",
+  "engineVersion": "3.80.1"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "template",
+  "title": "Game Template",
+  "description": "A template for creating new minigames",
+  "version": "1.0.0",
+  "minPlayers": 1,
+  "maxPlayers": 4,
+  "duration": 60,
+  "xpReward": 50,
+  "engine": "phaser",
+  "engineVersion": "3.80.1"
+}

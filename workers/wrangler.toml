@@ -1,0 +1,25 @@
+name = "minigame-api"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "minigame-db"
+database_id = "placeholder-d1-database-id"
+
+[[kv_namespaces]]
+binding = "SCHEDULE"
+id = "placeholder-kv-namespace-id"
+
+[[r2_buckets]]
+binding = "GAME_BUNDLES"
+bucket_name = "minigame-bundles"
+
+[durable_objects]
+bindings = [
+  { name = "GAME_ROOM", class_name = "GameRoom" }
+]
+
+[[migrations]]
+tag = "v1"
+new_classes = ["GameRoom"]
